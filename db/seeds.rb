@@ -9,11 +9,10 @@ puts "Destroying diagram.."
 Diagram.destroy_all
 puts "Diagram destroyed"
 
-
-Comment.create!(content: "C'est génial, j'adore me déplacer en trotinette", user_id: first_user.id, post_id: post_1.id)
-
-Comment.create!(content: "J'ai pu économiser de l'argent depuis que j'utilise ce nouveau moyen de transport!,", user_id: first_user.id, post_id: post_2.id)
-
-Comment.create!(content: "C'est génial, j'adore me déplacer en gyropode", user_id: second_user.id, post_id: post_3.id)
-
-Comment.create!(content: "J'ai pu économiser de l'argent depuis que j'utilise ce nouveau moyen de transport!", user_id: second_user.id, post_id: post_4.id)
+Diagram.create!(name: "Diagramme de séquence,", type: "UML," , description:"Il montre comment les objets interragissent les uns avec les autres")
+Diagram.create!(name: "Diagramme de classe,", type: "UML," , description:"Il représente les différentes classes dans un système et permet de comprendre la structure du système et les relation entre les parties et comprendre comment les faire avancer")
+Diagram.create!(name: "Diagramme de cas d'utilisation,", type: "UML," , description:"Il identifie les acteurs et les fonctionnalités d'un système")
+Diagram.create!(name: "Diagramme d'état,", type: "UML," , description:"Il représente les différents état d'un objet ou d'un coposant")
+Diagram.create!(name: "Diagramme de déploiement,", type: "UML," , description:"Il montre comment les composants logiciels sont déployés sur du matériel physique comme des serveurs ou des ordinateurs")
+Diagram.create!(name: "Diagramme de composant,", type: "UML," , description:"Il permet de représenter les composants logiciel et leurs dépendances")
+Diagram.create!(name: "Diagramme de composant,", type: "UML," , description:"Il permet de représenter les composants logiciel et leurs dépendances")
