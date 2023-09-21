@@ -15,4 +15,7 @@ Diagram.create!(name: "Diagramme de cas d'utilisation,", type: "UML," , descript
 Diagram.create!(name: "Diagramme d'état,", type: "UML," , description:"Il représente les différents état d'un objet ou d'un coposant")
 Diagram.create!(name: "Diagramme de déploiement,", type: "UML," , description:"Il montre comment les composants logiciels sont déployés sur du matériel physique comme des serveurs ou des ordinateurs")
 Diagram.create!(name: "Diagramme de composant,", type: "UML," , description:"Il permet de représenter les composants logiciel et leurs dépendances")
-Diagram.create!(name: "Diagramme de composant,", type: "UML," , description:"Il permet de représenter les composants logiciel et leurs dépendances")
+Diagram.create!(name: "Diagramme d'activité,", type: "UML," , description:"Il permet de connaître le comportement des composants")
+Diagram.create!(name: "Diagramme de communication,", type: "UML," , description:"Il permet de voir les déplacement des informations aux différents endroits")
+Diagram.create!(name: "Diagramme de présentation,", type: "UML," , description:"Il permet de faire fonctionner les composants par étape")
+Diagram.create!(name: "Diagramme de temps,", type: "UML," , description:"Il permet de connaître la durée de chaque étape")
