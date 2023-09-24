@@ -11,7 +11,7 @@ puts "Destroying diagram.."
 # -----------------------------------Création des diagrammes---------------------------------------------------------
 puts "Creating diagram.."
 
-one_diagram = Diagram.create!(name: "Diagramme de séquence,", type: "uml,", description:"Il montre comment les objets interragissent les uns avec les autres", url:"rfjkjgjdg")
+diagram1 = Diagram.create!(name: "Diagramme de séquence", type: "gjgkgjgj", description:"Il montre comment les objets interragissent les uns avec les autres", url:"rfjkjgjdg")
 # diagram_2 = Diagram.create!(name: "Diagramme de classe,", type: "uml," , description:"Il représente les différentes classes dans un système et permet de comprendre la structure du système et les relation entre les parties et comprendre comment les faire avancer", url: "sdhbhvhsdjk")
 # Diagram.create!(name: "Diagramme de cas d'utilisation,", type: "uml," , description:"Il identifie les acteurs et les fonctionnalités d'un système", url:"...")
 # Diagram.create!(name: "Diagramme d'état,", type: "uml," , description:"Il représente les différents état d'un objet ou d'un coposant", url:"..")
