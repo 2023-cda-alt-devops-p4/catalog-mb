@@ -1,21 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
+
+
   <meta charset="utf-8">
   <meta name= "viewport" content="width=device_width, initial-scale=1">
   <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
 
+
   </head>
     <body>
   <%# -------------JS link--------------------- %>
   <script src="js/script.js"></script>
       <div id= "container">
-        <div id="navbar"> </div>
-          <img src="/path/to/image/my-icon.svg" alt="Mon icône" />
-
+        <div id="navbar">
+         <img id="home-img" src="<%= image_path('menu.png') %>">
             <div id="bx bx-menu-icon"></div>
+              <ul id="navlist">
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#">Diagrammes UML</a></li>
+                <li><a href="#">Diagrammes Merise</a></li>
+                <li><a href="#"></a></li>
+              </ul>
+        </div>
 
 
 
