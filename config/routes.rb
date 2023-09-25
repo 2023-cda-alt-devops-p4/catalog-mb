@@ -1,7 +1,8 @@
-# config/routes.rb
 Rails.application.routes.draw do
-  get '/home', to: 'pages#home'
+  root to: "pages#home"
+  resources :diagram, only: ['index', 'show']
 end
+
 # get 'pages/home'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
