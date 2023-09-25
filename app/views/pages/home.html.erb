@@ -1,8 +1,41 @@
-<div id= "container">
- <h1 id="title">Decouvrir les diagrammes UML et Merise</h1>
+<!DOCTYPE html>
+<html>
+<head>
+
+
+  <meta charset="utf-8">
+  <meta name= "viewport" content="width=device_width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+
+
+  </head>
+    <body>
+  <%# -------------JS link--------------------- %>
+  <script src="js/script.js"></script>
+      <div id= "container">
+        <div id="navbar">
+         <img id="home-img" src="<%= image_path('menu.png') %>">
+            <div id="bx bx-menu-icon"></div>
+              <ul id="navlist">
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#">Diagrammes UML</a></li>
+                <li><a href="#">Diagrammes Merise</a></li>
+                <li><a href="#"></a></li>
+              </ul>
+        </div>
+
+
+
+
+          <h1 id="title">Decouvrir les diagrammes UML et Merise</h1>
   <div id="infos_diagram">
     <% @diagram.each do |diagram| %>
     <%= diagram.name %>
+    <%= diagram.description %>
     <% end %>
   </div>
-</div>
+    </div>
+  </body>
+</html>
