@@ -1,11 +1,10 @@
 <div id= "container">
- <h1 id="title">Decouvrir le diagrammes UML et Merise</h1>
+ <h1 id="title">Decouvrir les diagrammes UML et Merise</h1>
   <div id="infos_diagram">
     <% @diagram.each do |diagram| %>
     <%= diagram.name %>
     <%= diagram.type %>
     <%= diagram.description %>
-    <%= diagram.url %>
-          <% end %>
+    <% end %>
   </div>
 </div>
