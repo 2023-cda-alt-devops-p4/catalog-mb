@@ -1,4 +1,4 @@
-class DiagramController < ApplicationController
+class DiagramsController < ApplicationController
 
   def index
     @diagram = Diagram.all

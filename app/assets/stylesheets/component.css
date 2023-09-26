@@ -1,0 +1,35 @@
+/* Réinitialisation des styles par défaut du navigateur */
+body, ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Style de base de la barre de navigation */
+nav {
+  background-color: #333; /* Couleur de fond de la barre de navigation */
+  color: #fff; /* Couleur du texte de la barre de navigation */
+  font-family: Arial, sans-serif; /* Police de caractères */
+}
+
+/* Style de la liste non ordonnée (ul) dans la barre de navigation */
+ul {
+  list-style: none; /* Supprime les puces de liste */
+  display: flex; /* Utilise un affichage flex pour aligner les éléments horizontalement */
+}
+
+/* Style des éléments de la liste (li) dans la barre de navigation */
+li {
+  margin-right: 100px; /* Marge à droite entre les éléments de la liste */
+}
+
+/* Style des liens (a) dans la barre de navigation */
+li a {
+  text-decoration: none; /* Supprime la soulignement des liens */
+  color: #fff; /* Couleur du texte des liens */
+  transition: color 0.3s; /* Transition en douceur de la couleur du texte */
+}
+
+/* Changement de couleur du texte au survol du lien */
+li a:hover {
+  color: #ff9900; /* Nouvelle couleur du texte au survol */
+}

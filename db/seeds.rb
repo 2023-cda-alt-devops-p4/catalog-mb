@@ -26,3 +26,5 @@ diagram12 = Diagram.create!(name: "Diagramme de paquetage", description:"Il perm
 diagram13 = Diagram.create!(name: "Diagramme de structure" , description:"Il permet de connaître la méthode")
 diagram14 = Diagram.create!(name:"Diagramme de composite", description:"Il permet de connaître les composants et leurs structures")
 puts "diagram created"
+
+merise1 = Merise.create!(name:"Diagramme de flux", description:"Il permet de voir comment l'information circule dans le système")
