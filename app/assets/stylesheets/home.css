@@ -1,6 +1,24 @@
-body{
-  background: #011627;
-  color: #fff
-
-
+.container{
+  width: 1000px;
+  margin: 0 auto;
 }
+@media (max-width: 900px){
+  .container {
+    width: 650px;
+
+  }
+}
+
+  @media (max-width: 700px){
+    .container {
+      width: 400px;
+
+    }
+  }
+
+    @media (max-width: 450px){
+      .container {
+        width: 650px;
+
+      }
+    }
