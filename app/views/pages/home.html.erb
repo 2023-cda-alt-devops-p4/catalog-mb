@@ -13,14 +13,14 @@
       <div class="container-navbar">
         <nav>
           <ul>
-             <li><%= link_to 'Accueil', home_path %></li>
-             <li><%= link_to 'Diagramme Merise',merise_path %></li>
-             <li><%= link_to 'Diagramme UML',uml_path %></li>
+              <li><%= link_to 'Accueil', root_path %></li>
+              <li><%= link_to 'Diagrammes', diagrams_path %></li>
+              <li><%= link_to 'Méthodes Merise', merises_path %></li>
           </ul>
         </nav>
       </div>
 
-
+<%# ------------------------------Affichage des diagrammes UML et Merise------------------------ %>
             <div id="infos_diagram">
                 <% @diagram.each do |diagram| %>
                 <%= diagram.name %>

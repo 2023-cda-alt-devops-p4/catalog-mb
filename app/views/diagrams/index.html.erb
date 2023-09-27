@@ -1,6 +1,11 @@
-<div id="container">
-  <h1>Les différents diagrammes</h1>
-    <% @diagram.each do |diagram| %>
-    <%= link_to "#{diagram.name}", diagram_path(diagram) %>
-    <% end %>
-</div>
+<div class ="container">
+
+
+<!-- app/views/diagrams/index.html.erb -->
+
+<h1>Liste des Diagrammes</h1>
+<ul>
+  <% @diagrams.each do |diagram| %>
+    <li><%= link_to diagram.name, diagram_path(diagram) %> (ID: <%= diagram.id %>)</li>
+  <% end %>
+</ul>
