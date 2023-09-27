@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   root to: "pages#home"
   resources :diagram, only: ['index', 'show']
+
 end
 
 # get 'pages/home'
