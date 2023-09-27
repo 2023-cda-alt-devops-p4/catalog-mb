@@ -4,21 +4,24 @@
     <meta charset="utf-8">
     <meta name= "viewport" content="width=device_width, initial-scale=1">
       <link rel="stylesheet" type="text/css" href="/assets/stylesheets/application.css">
+     </head>
+        <body>
+      <%# --------------------Création navbar---------------------------------------------- %>
 
-  </head>
-
-<%# ---------------------Création navbar---------------------------------------------- %>
- <body>
-    <div class="container">
-      <div class="container-navbar">
-        <nav>
-          <ul>
+          <div class="container-navbar">
+          <nav>
+            <ul>
               <li><%= link_to 'Accueil', root_path %></li>
               <li><%= link_to 'Diagrammes UML', diagrams_path %></li>
               <li><%= link_to 'Diagrammes Merise', merises_path %></li>
-          </ul>
-        </nav>
-      </div>
+            </ul>
+          </nav>
+        </div>
+        <%# ----------------------image fond ecran------------------------------------------------- %>
+          <div class="container">
+            <div class= "home-img">
+              <img src="<%= image_path('stars.jpg') %>">
+          </div>
 
 <%# ------------------------------Affichage des diagrammes UML et Merise------------------------ %>
             <div id="infos_diagram">

@@ -1,7 +1,4 @@
-.container{
-  width: 1000px;
-  margin: 0 auto;
-}
+
 @media (max-width: 900px){
   .container {
     width: 650px;
@@ -21,4 +18,10 @@
         width: 650px;
 
       }
+    }
+
+    .home-img{
+    background-image: url("https://www.canva.com/photos/MADGxO0WJ8I-body-of-water-near-mountains-under-starry-night/");
+    background-size: cover;
+    height: 100vh;
     }
