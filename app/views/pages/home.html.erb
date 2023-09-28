@@ -9,15 +9,17 @@
       <%# --------------------Création navbar---------------------------------------------- %>
 
           <div class="container-navbar">
-          <nav>
-            <ul>
-              <li><%= link_to 'Accueil', root_path %></li>
-              <li><%= link_to 'Diagrammes UML', diagrams_path %></li>
-              <li><%= link_to 'Diagrammes Merise', merises_path %></li>
-            </ul>
-          </nav>
+            <nav>
+                <div class= "info-navbar">
+              <ul>
+                <li><%= link_to 'Accueil', root_path %></li>
+                <li><%= link_to 'Diagrammes UML', diagrams_path %></li>
+                <li><%= link_to 'Diagrammes Merise', merises_path %></li>
+              </ul>
+            </nav>
+          </div>
         </div>
-        <%# ----------------------image fond ecran------------------------------------------------- %>
+        <%# ----------------------Image fond ecran------------------------------------------------- %>
           <div class="container">
             <div class= "home-img">
               <img src="<%= image_path('stars.jpg') %>">
