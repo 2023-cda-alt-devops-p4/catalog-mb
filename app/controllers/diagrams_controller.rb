@@ -1,15 +1,11 @@
 class DiagramsController < ApplicationController
+
   def index
-    @diagram = Diagram.all
+    @diagram = Rails.root.join('db/diagrams.json').read
   end
 
   def show
-    @diagram = Diagram.find(params[:id])
+    @diagram = Rails.root.join('db/diagrams.json').read
   end
 
-  private
-
-  def diagram_params
-    params.require(:diagram).permit(:name, :description)
-  end
 end
