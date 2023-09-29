@@ -6,32 +6,31 @@
       <link rel="stylesheet" type="text/css" href="/assets/stylesheets/application.css">
      </head>
         <body>
-      <%# --------------------Création navbar---------------------------------------------- %>
-
-          <div class="container-navbar">
-            <nav>
-                <div class= "info-navbar">
-              <ul>
-                <li><%= link_to 'Accueil', root_path %></li>
-                <li><%= link_to 'Diagrammes UML', diagrams_path %></li>
-                <li><%= link_to 'Diagrammes Merise', merises_path %></li>
-              </ul>
-            </nav>
-          </div>
-        </div>
-        <%# ----------------------Image fond ecran------------------------------------------------- %>
+        <%# ---------------------------------ajout navbar---------------------------------------------------------- %>
+           <nav class="navbar">
+              <ul class="navbar-infos">
+                  <li class="navbar-item">
+                      <a href="<%= root_path %>" class="navbar-lien">Accueil</a>
+                  </li>
+                      <li class="navbar-item">
+                        <a href="<%= diagrams_path %>" class="navbar-lien">Diagrammes UML</a>
+                  </li>
+                      <li class="navbar-item">
+                        <a href="<%= merises_path %>" class="navbar-lien">Diagrammes Merise</a>
+                      </li>
+             </ul>
+          </nav>
+<%# ----------------------Bannière------------------------------------ %>
           <div class="container">
-            <div class= "home-img">
-              <img src="<%= image_path('stars.jpg') %>">
+            <div class="banner">
+             <%= image_tag("stars.jpg", alt: "Bannière") %>
+            </div>
+              <div class="btn">
+              <%= link_to "Découvrir les diagrammes UML", diagrams_path %>
+            </div>
+
+            <div class="btn">
+              <%= link_to "Découvrir les diagrammes Merise", merises_path %>
           </div>
 
-<%# ------------------------------Affichage des diagrammes UML et Merise------------------------ %>
-            <%# <div id="infos_diagram">
-                <% @diagram.each do |diagram| %>
-                <%# <%= diagram.name %>
-                <%# <%= diagram.description %>
-                <%# <% end %>
-              <%# </div> %>
-        </div>
-  </body>
-</html>
+            <div>

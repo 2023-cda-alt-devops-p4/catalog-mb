@@ -1,5 +1,45 @@
 [ {
+  "id": "b049af70-bf39-4353-9b02-73fe6c01aa8d",
   "title": "Diagramme de classe",
-  "description": "Il représente les différentes classes dans un système et permet de comprendre la structure du système et les relation entre les parties et comprendre comment les faire avancer"
+  "description": "Il représente les différentes classes dans un système et permet de comprendre la structure du système et les relation entre les parties et comprendre comment les faire avancer",
+  "photo": "assets/image/diagram-classe.png"
 }
+
+// {
+//   "id": "b049af70-bf39-4353-9b02-73fe6c01aa8d",
+//   "title":  "Diagramme de cas d'utilisation",
+//   "description": "Il identifie les acteurs et les fonctionnalités d'un système",
+//   "photo": "assets/image/diagram-cas-utilisation.png"
+// }
+// {
+//   "id": "b049af70-bf39-4353-9b02-73fe6c01aa8d",
+//   "title":  "Diagramme d'objet",
+//   "description": "Il permet de connaître le comportement d'un composant dans un moment précis",
+//   "photo": "assets/image/diagram-objet.png"
+// }
+// {
+//   "id": "b049af70-bf39-4353-9b02-73fe6c01aa8d",
+//   "title":  "Diagramme d'état",
+//   "description": "Il représente les différents état d'un objet ou d'un composant",
+//   "photo": "assets/image/diagram-objet.png"
+// }
+
+// {
+//   "id": "b049af70-bf39-4353-9b02-73fe6c01aa8d",
+//   "title":  "Diagramme de déploiement",
+//   "description": "Il montre comment les composants logiciels sont déployés sur du matériel physique comme des serveurs ou des ordinateurs",
+//   "photo": "assets/image/diagram-deploiement.jpeg"
+// }
+// {
+//   "id": "b049af70-bf39-4353-9b02-73fe6c01aa8d",
+//   "title":  "Diagramme d'activité",
+//   "description": "Il permet de connaître le comportement des composants",
+//   "photo": "assets/image/diagram-activite.png"
+// }
+// {
+//   "id": "b049af70-bf39-4353-9b02-73fe6c01aa8d",
+//   "title":  "Diagramme de composant",
+//   "description": "Il permet de représenter les composants logiciel et leurs dépendances",
+//   "photo": "assets/image/diagram-composant.png"
+// }
 ]
