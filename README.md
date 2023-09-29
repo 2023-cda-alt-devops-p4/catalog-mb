@@ -25,8 +25,7 @@ Etant parfois en déplacement, ce support doit être consultable en ligne aussi 
 ​
 
 A vous de jouer 😉
-Modalités pédagogiques
-
+Modalités pédagogiquesgit
 Activité individuelle en mode collaboratif.
 
 ​
