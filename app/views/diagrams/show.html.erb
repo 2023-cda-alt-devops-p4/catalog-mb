@@ -1,7 +1,32 @@
-<%# <div class= "container_details_diagram">
-  <h1><%= @diagram.name <%= @diagram.description %>
-    <%# <div id="liens">
-        <%= link_to "Retourner à la liste des diagrammes UML", diagrams_path %>
-    <%# </div>
-<div> %>
-<h1> Titre</h1>
+<!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="utf-8">
+      <meta name= "viewport" content="width=device_width, initial-scale=1">
+      <link rel="stylesheet" type="text/css" href="/assets/stylesheets/application.css">
+    </head>
+      <body>
+          <nav class="navbar">
+            <ul class="navbar-infos">
+              <li class="navbar-item">
+                <a href="<%= root_path %>" class="navbar-lien">Accueil</a>
+                </li>
+                    <li class="navbar-item">
+                     <a href="<%= diagrams_path %>" class="navbar-lien">Diagrammes UML</a>
+                    </li>
+                      <li class="navbar-item">
+                        <a href="<%= merises_path %>" class="navbar-lien">Diagrammes Merise</a>
+                    </li>
+            </ul>
+          </nav>
+
+<h1> Les diagrammes UML et merise</h1>
+<% @diagram.each do |oneDiagram| %>
+ <%= oneDiagram["description"] %>
+ <%= link_to oneDiagram["description"],:controller => "diagrams",:action => "show",:id => oneDiagram["id"] %>
+<% end %>
+
+<% @diagram.each do |oneDiagram| %>
+ <%= oneDiagram["image"] %>
+ <%= link_to oneDiagram["image"],:controller => "diagrams",:action => "show",:id => oneDiagram["id"] %>
+<% end %>

@@ -1,9 +1,32 @@
- <div class ="container_diagram">
-  <h1>Les différents diagrammes UML</h1>
- <% @diagram.each do |oneDiagram| %>
- <%= oneDiagram["title"] %>
- <%= link_to oneDiagram["title"],:controller => "diagrams",:action => "show",:id => oneDiagram["id"] %>
-<% end %>
-
-
-</div>
+<!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="utf-8">
+      <meta name= "viewport" content="width=device_width, initial-scale=1">
+      <link rel="stylesheet" type="text/css" href="/assets/stylesheets/application.css">
+    </head>
+      <body>
+          <nav class="navbar">
+            <ul class="navbar-infos">
+              <li class="navbar-item">
+                <a href="<%= root_path %>" class="navbar-lien">Accueil</a>
+                </li>
+                    <li class="navbar-item">
+                     <a href="<%= diagrams_path %>" class="navbar-lien">Diagrammes UML</a>
+                    </li>
+                      <li class="navbar-item">
+                        <a href="<%= merises_path %>" class="navbar-lien">Diagrammes Merise</a>
+                    </li>
+            </ul>
+          </nav>
+                <div class ="container">
+                  <div class ="container_diagram">
+                    <h1>Les différents diagrammes UML</h1>
+                       <% @diagram.each do |oneDiagram| %>
+                      <%= oneDiagram["title"] %>
+                     <%= link_to oneDiagram["title"],:controller => "diagrams",:action => "show",:id => oneDiagram["id"] %>
+                    <% end %>
+                </div>
+              </div>
+      <body>
+  <html>

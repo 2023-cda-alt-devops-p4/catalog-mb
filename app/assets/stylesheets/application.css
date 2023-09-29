@@ -1,2 +1,10 @@
-@import 'component';
+@import 'navbar';
 @import 'home';
+@import 'container';
+/* -------------------Fonts & colors----------------- */
+body{
+  font-family: "Open Sans", "Helvetica","sans-serif";
+ padding-bottom: 200px;
+ margin: 0;
+ background-color: rgb(240, 240, 240);
+}
