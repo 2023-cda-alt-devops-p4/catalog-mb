@@ -19,15 +19,35 @@
                     </li>
             </ul>
           </nav>
-                <div class ="container">
-                  <div class ="container_diagram">
-                    <h1> Qu-est-ce qu'un diagramme UML??
+                <div class ="container-diagram">
+                  <div class ="title">
+                    <h1> Qu-est-ce qu'un diagramme UML?</h1>
+                  <div>
+                    <div class ="info-diagram-uml">
+                      <p>Un diagramme UML est un moyen de visualiser des systèmes et des logiciels à l'aide du langage de modélisation unifié (UML). Les ingénieurs logiciels créent des diagrammes UML pour comprendre la conception, l'architecture du code et la mise en œuvre proposée de systèmes logiciels complexes.</p>
+                        <h1>Les différents diagrammes UML</h1>
+                          <ul>
+                          <li>Le diagramme de classe</li>
+                          <li>Le diagramme de séquence</li>
+                          <li>Le diagramme de cas d'utlisation</li>
+                          <li>Le diagramme d'état</li>
+                          <li>Le diagramme de déploiement</li>
+                          <li>Le diagramme de composants</li>
+                          <li>Le diagramme d'objet</li>
+                          <li>Le diagramme de paquetage</li>
+                          <li>Le diagramme d'activité</li>
+                          <li>Le diagramme de communication</li>
+                          <li>Le diagramme de structure</li>
+                          <li>Le diagramme de temps</li>
+                          <li>Le diagramme de composite</li>
+                     <a href="<%= diagram_path(@diagram)%>" class="btn-btn-blue">en savoir plus</a>
 
-                    <h1>Les différents diagrammes UML</h1>
-                       <% @diagram.each do |oneDiagram| %>
-                      <%= oneDiagram["title"] %>
-                     <%= link_to oneDiagram["title"],:controller => "diagrams",:action => "show",:id => oneDiagram["id"] %>
-                    <% end %>
+                        <ul>
+                      </div>
+                       <%# <% @diagram.each do |oneDiagram| %>
+                      <%# <%= oneDiagram["title"] %>
+                     <%# <%= link_to oneDiagram["title"],:controller => "diagrams",:action => "show",:id => oneDiagram["id"] %>
+                    <%# <% end %>
                 </div>
               </div>
       <body>

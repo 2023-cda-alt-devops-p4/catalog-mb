@@ -8,22 +8,29 @@
         <body>
         <%# ---------------------------------ajout navbar---------------------------------------------------------- %>
            <nav class="navbar">
-                <ul class="navbar-infos">
+              <ul class="navbar-infos">
                   <li class="navbar-item">
-                    <a href="<%= root_path %>" class="navbar-lien">Accueil</a>
+                      <a href="<%= root_path %>" class="navbar-lien">Accueil</a>
                   </li>
-                    <li class="navbar-item">
-                      <a href="<%= diagrams_path %>" class="navbar-lien">Diagrammes UML</a>
+                      <li class="navbar-item">
+                        <a href="<%= diagrams_path %>" class="navbar-lien">Diagrammes UML</a>
                   </li>
-                    <li class="navbar-item">
-                      <a href="<%= merises_path %>" class="navbar-lien">Diagrammes Merise</a>
-                    </li>
-                </ul>
-              </nav>
-<%# ----------------------Image fond ecran------------------------------------- %>
+                      <li class="navbar-item">
+                        <a href="<%= merises_path %>" class="navbar-lien">Diagrammes Merise</a>
+                      </li>
+             </ul>
+          </nav>
+<%# ----------------------Bannière------------------------------------ %>
           <div class="container">
+            <div class="banner">
+             <%= image_tag("stars.jpg", alt: "Bannière") %>
+            </div>
+              <div class="btn">
+              <%= link_to "Découvrir les diagrammes UML", diagrams_path %>
+            </div>
 
-
-                <div class="button">
-
+            <div class="btn">
+              <%= link_to "Découvrir les diagrammes Merise", merises_path %>
           </div>
+
+            <div>
