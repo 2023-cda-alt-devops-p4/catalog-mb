@@ -19,14 +19,18 @@
                     </li>
             </ul>
           </nav>
+            <div class ="title-diagram">
+              <h1> Les diagrammes UML et merise</h1>
+            </div>
 
-<h1> Les diagrammes UML et merise</h1>
-<% @diagram.each do |oneDiagram| %>
- <%= oneDiagram["description"] %>
- <%= link_to oneDiagram["description"],:controller => "diagrams",:action => "show",:id => oneDiagram["id"] %>
-<% end %>
+            <% @diagram.each do |oneDiagram| %>
+            <%= oneDiagram["description"] %>
+            <%= link_to oneDiagram["description"],:controller => "diagrams",:action => "show",:id => oneDiagram["id"] %>
+            <% end %>
 
-<% @diagram.each do |oneDiagram| %>
- <%= oneDiagram["image"] %>
- <%= link_to oneDiagram["image"],:controller => "diagrams",:action => "show",:id => oneDiagram["id"] %>
-<% end %>
+        <% @diagram.each do |oneDiagram| %>
+        <%= oneDiagram["image"] %>
+        <%= link_to oneDiagram["image"],:controller => "diagrams",:action => "show",:id => oneDiagram["id"] %>
+        <% end %>
+      </body>
+</html>

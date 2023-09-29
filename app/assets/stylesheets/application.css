@@ -1,6 +1,7 @@
 @import 'navbar';
 @import 'home';
 @import 'container';
+@import 'banner';
 /* -------------------Fonts & colors----------------- */
 body{
   font-family: "Open Sans", "Helvetica","sans-serif";
