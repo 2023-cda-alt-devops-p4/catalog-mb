@@ -3,7 +3,7 @@
     <head>
       <meta charset="utf-8">
       <meta name= "viewport" content="width=device_width, initial-scale=1">
-      <link rel="stylesheet" type="text/css" href="/assets/stylesheets/application.css">
+
     </head>
       <body>
           <nav class="navbar">
@@ -19,7 +19,7 @@
                     </li>
             </ul>
           </nav>
-                <div class ="container-merise">
+                <div class ="container">
                   <div class ="title">
                     <h1> Qu-est-ce qu'un diagramme Merise?</h1>
                   <div>
@@ -35,8 +35,10 @@
                           <li>Le diagramme d'organisation</li>
                           <li>Le diagramme de flux externe"</li>
                           <li>Le diagramme de flux de données</li>
-
-                     <a href="<%= merise_path(@merise)%>" class="btn-btn-blue">en savoir plus</a>
+                           <div>
+                           <%= link_to "Write a story", "#", class: "btn btn-ghost" %>
+                              <%# <a href="<%= merise_path(@merise)" class="btn-blue"En savoir plus</a> %>
+                            </div>
 
                         <ul>
                       </div>
