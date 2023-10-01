@@ -1,7 +1,43 @@
-<%# <div class= "container_details_merise">
-  <h1><%= @merise.name %> <%= @merise.description %></h1>
-    <%# <div id="liens">
-        <%# <%= link_to "Retourner à la liste des diagrammes Merise", merises_path %>
-    <%# </div>
-<div>  %>
-<h1> Titre</h1>
+<body>
+  <nav class="navbar">
+    <ul class="navbar-infos">
+      <li class="navbar-item">
+        <a href="<%= root_path %>" class="navbar-lien">Accueil</a>
+      </li>
+      <li class="navbar-item">
+        <a href="<%= diagrams_path %>" class="navbar-lien">Diagrammes UML</a>
+      </li>
+      <li class="navbar-item">
+        <a href="<%= merises_path %>" class="navbar-lien">Diagrammes Merise</a>
+      </li>
+    </ul>
+  </nav>
+   <div class="card">
+  <h2>Diagramme de flux de données</h2>
+  <%= image_tag("merise-flux.gif", alt: "diagramme de flux") %>
+  <p>Il permet de voir comment l'information circule dans le système</p>
+  <p>source image: <a href="https://web.maths.unsw.edu.au/~lafaye/CCM/merise/mcc.htm">https://web.maths.unsw.edu.au/~lafaye/CCM/merise/mcc.htm</a></p>
+</div>
+
+<div class="card">
+  <h2>Diagramme d'entité-relation</h2>
+  <%= image_tag("merise-relation.png", alt: "diagramme d'entité relation") %>
+  <p>Il montre comment les composants sont liés entre eux</p>
+  <p>source image: <a href="https://web.maths.unsw.edu.au/~lafaye/CCM/merise/mcc.htm">https://web.maths.unsw.edu.au/~lafaye/CCM/merise/mcc.htm</a></p>
+</div>
+
+<div class="card">
+  <h2>Diagramme de structure de données</h2>
+  <%= image_tag("merise-structure-données.jpg", alt: "diagramme de structure de données") %>
+  <p>Il permet de montrer comment organiser les données dans une DDa</p>
+  <p>source image: <a href="https://www.prospection-ciblee.com/mcd-modele-conceptuel-de-donnees-base-de-donnees/">https://www.prospection-ciblee.com/mcd-modele-conceptuel-de-donnees-base-de-donnees/</a></p>
+</div>
+
+<div class="card">
+  <h2>Diagramme de navigation</h2>
+  <%= image_tag("merise-navigation.png", alt: "diagramme de navigation") %>
+  <p>Il permet de voir comment l'information circule dans le système</p>
+  <p>source image: <a href="https://uwe.pst.ifi.lmu.de/teachingTutorialNavigationFrench.html">https://uwe.pst.ifi.lmu.de/teachingTutorialNavigationFrench.html</a></p>
+</div>
+
+  </body>

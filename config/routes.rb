@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
   root to: "pages#home"
-    resources :merises, only: [:index, :show]
+
     resources :diagrams, only: [:index, :show]
+    resources :merises, only: [:index, :show]
 
 end
 

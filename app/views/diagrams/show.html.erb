@@ -1,10 +1,5 @@
-<!DOCTYPE html>
-  <html>
-    <head>
-      <meta charset="utf-8">
-      <meta name= "viewport" content="width=device_width, initial-scale=1">
-      <link rel="stylesheet" type="text/css" href="/assets/stylesheets/application.css">
-    </head>
+'require 'sassc'
+
       <body>
           <nav class="navbar">
             <ul class="navbar-infos">
@@ -19,68 +14,76 @@
                     </li>
                       </ul>
           </nav>
-            <div class ="title-diagram">
+            <div class ="card">
               <h1> Les diagrammes UML </h1>
                 <h2>Le diagramme de classe</h2>
                   <%= image_tag("diagram-classe.png", alt: "diagramme de classe") %>
                   <p>Il représente les différentes classes dans un système et permet de comprendre la structure et son fonctionnement entre les parties.</p>
+                  <p> source image: <a href="https://www.lucidchart.com">https://www.lucidchart.com</a></p>
             </div>
-            <div class ="title-diagram">
+            <div class ="card">
               <h2>Le diagramme de séquence</h2>
                 <%= image_tag("diagram-sequence.png", alt: "diagramme de séquence") %>
                   <p>Il montre comment les objets interragissent les uns avec les autres.</p>
+                  <p> source image: <a href="https://www.lucidchart.com">https://www.lucidchart.com</a></p>
             </div>
-            <div class ="title-diagram">
+            <div class ="card">
               <h2>Le diagramme de cas d'utlisation</h2>
                 <%= image_tag("diagram-cas-utilisation.png", alt: "diagramme de cas utilisation") %>
                   <p>Il identifie les acteurs et les fonctionnalités d'un système</p>
+                  <p> source image: <a href="https://www.lucidchart.com">https://www.lucidchart.com</a></p>
             </div>
-            <div class ="title-diagram">
+            <div class ="card">
               <h2>Le diagramme d'état</h2>
                 <%= image_tag("diagram-etat.png", alt: "diagramme d'état") %>
                   <p>Il représente les différents état d'un objet ou d'un composant</p>
+                   <p> source image: <a href="https://www.lucidchart.com">https://www.lucidchart.com</a></p>
             </div>
-              <div class ="title-diagram">
+              <div class ="card">
               <h2>Le diagramme de déploiement</h2>
                 <%= image_tag("diagram-deploiement.jpeg", alt: "diagramme de déploiement") %>
                   <p>Il montre comment les composants logiciels sont déployés sur du matériel physique comme des serveurs ou des ordinateurs</p>
+                  <p> source image: <a href="https://www.lucidchart.com">https://www.lucidchart.com</a></p>
             </div>
-                <div class ="title-diagram">
+                <div class ="card">
                  <h2>Le diagramme de composants</h2>
                   <%= image_tag("diagram-composant.png", alt: "diagramme de composants") %>
                   <p>Il permet de représenter les composants logiciel et leurs dépendances</p>
+                  <p> source image: <a href="https://www.lucidchart.com">https://www.lucidchart.com</a></p>
               </div>
-               <div class ="title-diagram">
+               <div class ="card">
                  <h2>Le diagramme d'objet</h2>
                   <%= image_tag("diagram-objet.png", alt: "diagramme d'objet") %>
                   <p>Il permet de connaître le comportement d'un composant dans un moment précis</p>
+                   <p> source image: <a href="https://www.lucidchart.com">https://www.lucidchart.com</a></p>
               </div>
-               <div class ="title-diagram">
+               <div class ="card">
                  <h2>Le diagramme d'activité</h2>
                   <%= image_tag("diagram-activite.png", alt: "diagramme d'activité") %>
                   <p>Il permet de connaître le comportement des composants</p>
+                   <p> source image: <a href="https://www.lucidchart.com">https://www.lucidchart.com</a></p>
               </div>
-                <div class ="title-diagram">
+                <div class ="card">
                  <h2>Le diagramme de communication</h2>
                   <%= image_tag("diagram-communication.jpeg", alt: "diagramme de communication") %>
                   <p>Il permet de voir les déplacements des informations aux différents endroits</p>
+                   <p> source image: <a href="https://www.lucidchart.com">https://www.lucidchart.com</a></p>
               </div>
-               <div class ="title-diagram">
+               <div class ="card">
                  <h2>Le diagramme de temps</h2>
                   <%= image_tag("diagram-temps.png", alt: "diagramme de temps") %>
                   <p>Il permet de connaître la durée de chaque étape</p>
+                   <p> source image: <a href="https://www.lucidchart.com">https://www.lucidchart.com</a></p>
               </div>
-              <div class ="title-diagram">
+              <div class ="card">
                  <h2>Le diagramme de composite</h2>
                   <%= image_tag("diagram-composite.png", alt: "diagramme de composite") %>
                   <p>Il permet de connaître les composants et leurs structures</p>
+                  <p> source image: <a href="https://www.lucidchart.com">https://www.lucidchart.com</a></p>
               </div>
 
 
-            <%# <% @diagram.each do |oneDiagram| %>
-            <%# <%= oneDiagram["description"] %>
-            <%# <%= link_to oneDiagram["description"],:controller => "diagrams",:action => "show",:id => oneDiagram["id"] %>
-            <%# % end %>
+
 
       </body>
 </html>

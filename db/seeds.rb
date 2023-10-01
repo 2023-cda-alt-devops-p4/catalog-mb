@@ -29,7 +29,6 @@ diagram14 = Diagram.create!(name:"Diagramme de composite", description:"Il perme
 
 puts "diagram created"
 
-
 # -----------------------------------Création des diagrammes Merise---------------------------------------------------------
 Merise.destroy_all
 puts "Destroying merise.."
