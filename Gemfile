@@ -69,4 +69,6 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
 
+ gem 'sassc'
+#  ajout de scss pour le design
 end
