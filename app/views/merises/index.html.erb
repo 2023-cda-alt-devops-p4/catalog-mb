@@ -39,9 +39,15 @@
                             <li>Le diagramme de flux externe"</li>
                             <li>Le diagramme de flux de données</li>
                             <div>
-                            <a href="<%= merise_path(@merise)%>" class="btn-btn-blue">en savoir plus</a>
-                              <%# <a href="<%= merise_path(@merise)" class="btn-blue"En savoir plus</a> %>
-                            </div>
+
+                      <% @merise.each do |merise| %>
+  <!-- Utilisez merise_path avec l'objet Merise et son ID -->
+  <%= link_to 'Voir les détails', merise_path(merise) %>
+<% end %>
+
+
+
+
 
                         <ul>
                       </div>

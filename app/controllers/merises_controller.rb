@@ -6,4 +6,5 @@ class MerisesController < ApplicationController
   def show
     @merise = Merise.find(params[:id])
   end
+
 end
