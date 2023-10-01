@@ -40,10 +40,8 @@
                             <li>Le diagramme de flux de données</li>
                             <div>
 
-                      <% @merise.each do |merise| %>
-  <!-- Utilisez merise_path avec l'objet Merise et son ID -->
-  <%= link_to 'Voir les détails', merise_path(merise) %>
-<% end %>
+                  <%= link_to 'Voir les détails', merise_path(@merise) %>
+
 
 
 

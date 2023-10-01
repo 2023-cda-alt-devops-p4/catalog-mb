@@ -4,7 +4,8 @@ class MerisesController < ApplicationController
   end
 
   def show
-    @merise = Merise.find(params[:id])
+    @merise = Merise.all
+
   end
 
 end
